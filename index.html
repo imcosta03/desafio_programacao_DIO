@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuro DEV</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div>
-        <input type="text" id="nomeEstudante" placeholder="Qual seu nome, futuro DEV?" />
-        <input type="number" id="xpEstudante" placeholder="Horas de estudo" min="0" />
-        <button onclick="classificarEstudante()">Adicionar</button>
+    <div class="container">
+        <div class="header">
+            <h1>Subindo de Nível</h1>
+        </div>
+        <div class="input-group">
+            <input type="text" id="nomeEstudante" placeholder="Qual seu nome, futuro DEV?" />
+            <input type="number" id="xpEstudante" placeholder="Horas de estudo" min="0" />
+            <button onclick="classificarEstudante()">Adicionar</button>
+        </div>
+        
         <div id="resultado"></div>
     </div>
     <script src="JS/script.js"></script>
