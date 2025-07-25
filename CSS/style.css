@@ -72,3 +72,42 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
+
+.medalha {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.ferro { background-color: #b0b0b0; color: #333; }
+.bronze { background-color: #cd7f32; color: white; }
+.prata { background-color: #c0c0c0; color: black; }
+.ouro { background-color: #ffd700; color: black; }
+.platina { background-color: #e5e4e2; color: black; }
+.ascendente { background-color: #a77dff; color: white; }
+.imortal { background-color: #5c5ce0; color: white; }
+.radiante { background: linear-gradient(to right, #fca311, #e63946); color: white; }
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success {
+    background: rgba(76, 175, 80, 0.2);
+    border: 2px solid #4caf50;
+    color: #4caf50;
+}
+
+.error {
+    background: rgba(244, 67, 54, 0.2);
+    border: 2px solid #f44336;
+    color: #f44336;
+}
+
+

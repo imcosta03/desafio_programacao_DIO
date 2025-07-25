@@ -3,7 +3,7 @@ function classificarEstudante(){
     const xp = parseInt(document.getElementById("xpEstudante").value);
 
     if (!nome || isNaN(xp) || xp <= 0){
-        document.getElementById('resultado').innerHTML = '<div style="color:red">Por favoe, preencha todos os campos corretamente!</div>';
+        document.getElementById('resultado').innerHTML = '<div class="result error">Por favoe, preencha todos os campos corretamente!</div>';
         return;
     }
 
@@ -38,7 +38,7 @@ function classificarEstudante(){
     }
 
     document.getElementById('resultado').innerHTML = 
-        `<div> A jornada não para, <span">${nome}</span>! Parabéns, você acumulou <span>${horasTotais}</span> horas estudadas.` + ` Medalha conquistada <span>${classeMedalha} ${tipoMedalha}</span></div>`;
+        `<div class="result success"> A jornada não para, <span">${nome}</span>! Parabéns, você acumulou <span>${horasTotais}</span> horas estudadas.` + ` Medalha conquistada <span class="medalha ${classeMedalha}"> ${tipoMedalha}</span></div>`;
 
     
 }
